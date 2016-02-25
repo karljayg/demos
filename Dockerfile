@@ -1,5 +1,5 @@
 FROM ubuntu:trusty
-ENV DEBIAN_FRONTEND noninteractive
+MAINTAINER PowerStormTech
 
 # Install dependecies
 RUN apt-get update
