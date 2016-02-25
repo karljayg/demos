@@ -4,7 +4,7 @@ MAINTAINER PowerStormTech
 # Install dependecies
 RUN apt-get update
 
-RUN apt-get install apache2 supervisor -y
+RUN apt-get install apache2 supervisor php -y
 RUN mkdir -p /var/lock/apache2 /var/run/apache2 /var/log/supervisor
 
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
