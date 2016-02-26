@@ -2,8 +2,8 @@
 # Run this script in the project directory
 
 # Clean containers
-docker kill app
-docker rm app
+docker kill app tom
+docker rm app tom
 
 # Build image
 echo Building Apache Docker image...
