@@ -19,4 +19,4 @@ docker run --name app -p 80:80 -d app
 
 
 echo Running Tomcat container...
-docker run --name tom -p 80:80 -d tomcat
+docker run --name tom -p 8888:8080 -d tomcat
