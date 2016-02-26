@@ -10,7 +10,7 @@ echo Building Apache Docker image...
 docker build -t app apache
 
 echo Building Tomcat Docker image...
-docker build -t app tomcat
+docker build -t tommy tomcat
 
 
 # Run container
@@ -19,4 +19,4 @@ docker run --name app -p 80:80 -d app
 
 
 echo Running Tomcat container...
-docker run --name tom -p 8888:8080 -d tomcat
+docker run --name tom -p 8888:8080 -d tommy
