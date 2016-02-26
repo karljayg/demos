@@ -1,14 +1,22 @@
 #!/bin/bash
 # Run this script in the project directory
 
+# Clean containers
 docker kill app
 docker rm app
 
-docker rmi -f app
-
-# build
+# Build image
+echo Building Apache Docker image...
 docker build -t app apache
 
+echo Building Tomcat Docker image...
+docker build -t app tomcat
 
-# run
+
+# Run container
+echo Running Apache container...
 docker run --name app -p 80:80 -d app
+
+
+echo Running Tomcat container...
+docker run --name tom -p 80:80 -d tomcat
